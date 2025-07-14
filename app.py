@@ -7,7 +7,7 @@ def main():
     st.write("# Classifica Folhas de Videiras!")
 
     #carregar modelo
-        
+
 
     #carregar imagem
 
@@ -15,5 +15,5 @@ def main():
     #classificar imagem
 
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
