@@ -47,7 +47,7 @@ def carrega_imagem():
         image = np.expand_dims(image, axis=0)
 
         return image
-
+    return None
 
 def main():
     st.set_page_config(page_title="Classifica Folhas de Videiras!")
@@ -59,6 +59,11 @@ def main():
 
     # carregar a imagem
     image = carrega_imagem()
+
+    if image is not None:
+        st.success("Pronto para classificar a imagem!")
+    else:
+        st.info("Por favor, envie uma imagem para classificar.")
 
     # classificar a imagem
 
