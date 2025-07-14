@@ -13,7 +13,7 @@ def carrega_modelo():
     url = 'https://drive.google.com/uc?id=1GpWix8dp6FeFAs6g0etbnw_avu9Aflfp'
 
     # baixa o arquivo (modelo)
-    gdown.down(url, 'modelo_quantizado16bits.tflite')
+    gdown.download(url, 'modelo_quantizado16bits.tflite')
 
     # carrega o modelo
     interpreter = tf.lite.Interpreter(model_path='modelo_quantizado16bits.tflite')
